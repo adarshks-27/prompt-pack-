@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Prompt Pack</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{
+    scroll-behavior: smooth;
+}
+.compare{
+  position:relative;
+  max-width:850px;
+  margin:auto;
+  overflow:hidden;
+  border-radius:24px;
+  box-shadow:0 0 45px rgba(56,189,248,0.35);
+  cursor:ew-resize;
+}
+
+.compare-img{
+  width:100%;
+  display:block;
+}
+
+.after-wrap{
+  position:absolute;
+  top:0;
+  left:0;
+  width:50%;
+  height:100%;
+  overflow:hidden;
+}
+
+.after-wrap img{
+  height:100%;
+  width:auto;
+  max-width:none;
+}
+
+.handle{
+  position:absolute;
+  top:0;
+  left:50%;
+  height:100%;
+  width:4px;
+  background:white;
+  transform:translateX(-50%);
+}
+
+.handle span{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background:#38bdf8;
+  color:#020617;
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+  box-shadow:0 0 25px rgba(56,189,248,0.8);
+}
+body{
+  font-family:Arial,sans-serif;
+  background:#020617;
+  color:white;
+}
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  background:#0f172a;
+}
+.logo{font-size:24px;font-weight:bold;color:#38bdf8}
+nav a{color:white;text-decoration:none;margin-left:20px}
+.hero{
+  min-height:85vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:50px 8%;
+  background:linear-gradient(135deg,#020617,#1e3a8a);
+}
+.hero h1{font-size:55px;margin-bottom:20px}
+.hero p{font-size:20px;color:#cbd5e1;max-width:750px;margin:auto}
+.price{font-size:45px;color:#22c55e;margin:25px}
+.btn{
+  display:inline-block;
+  padding:16px 35px;
+  background:#38bdf8;
+  color:#020617;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:18px;
+}
+section{padding:60px 8%;text-align:center}
+h2{font-size:35px;margin-bottom:30px}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.card{
+  background:#0f172a;
+  padding:25px;
+  border-radius:16px;
+  border:1px solid #1e293b;
+}
+.card h3{color:#38bdf8;margin-bottom:10px}
+.card p{color:#cbd5e1}
+.payment{
+  background:#0f172a;
+  border-radius:20px;
+  max-width:600px;
+  margin:auto;
+  padding:35px;
+}
+.upi{
+  background:#020617;
+  padding:15px;
+  border-radius:10px;
+  margin:20px 0;
+  color:#22c55e;
+  font-size:22px;
+}
+.banner{
+  width:100%;
+  max-width:1100px;
+  border-radius:24px;
+  box-shadow:0 0 40px rgba(56,189,248,0.35);
+  margin-bottom:30px;
+}
+footer{
+  text-align:center;
+  padding:25px;
+  background:#0f172a;
+  color:#94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">PromptPack</div>
+  <div>
+    <a href="#features">Features</a>
+    <a href="#payment">Buy</a>
+    <a href="#contact">Contact</a>
+    <a href="#reviews">Reviews</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div>
+
+       <img src="images/banner1.png"
+alt="Banner"
+style="width:100%; max-width:900px; border-radius:20px; margin-bottom:30px;">
+
+    <h1>AI Photo Editing Prompt Pack</h1>
+    <p>100+ premium prompts for Identity Lock, Cinematic Portraits, Background Change, Outfit Editing, Wallpaper Style and Instagram DP edits.</p>
+    <div class="price">Rs. 99</div>
+    <a class="btn" href="payment.html">Buy Now</a>
+  </div>
+</div>
+
+<section id="gallery">
+  <h2>Before & After Preview</h2>
+
+  <div class="compare" id="compareBox">
+    <img src="images/before1.png" class="compare-img" alt="Before">
+    <div class="after-wrap" id="afterWrap">
+      <img src="images/after1.png" class="compare-img" alt="After">
+    </div>
+
+    <div class="handle" id="handle">
+      <span>↔</span>
+    </div>
+  </div>
+  <div class="card"><h3>CINEMATIC SHOTS</h3><p>sample design for check our "HIGH QUALITY PROMPTS" </p></div>
+</section>
+
+<section id="features">
+  <h2>What You Get</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>100+ Prompts</h3>
+      <p>Ready-to-use AI photo editing prompts.</p>
+    </div>
+    <div class="card">
+      <h3>Identity Lock</h3>
+      <p>Prompts made to preserve face and features.</p>
+    </div>
+    <div class="card">
+      <h3>Instagram Ready</h3>
+      <p>DP, reels, wallpaper and portrait prompts.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Prompt Categories</h2>
+  <div class="cards">
+    <div class="card"><h3>Background Change</h3><p>Clean realistic background replacement.</p></div>
+    <div class="card"><h3>Outfit Editing</h3><p>Shirt, jeans, glasses and styling prompts.</p></div>
+    <div class="card"><h3>Cinematic Look</h3><p>Premium portrait and lighting prompts.</p></div>
+  </div>
+</section>
+
+<section id="reviews">
+  <h2>Customer Reviews</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Rahul</h3>
+      <p>Prompts are easy to use and very detailed.</p>
+    </div>
+    <div class="card">
+      <h3>Aman</h3>
+      <p>Best for Instagram photo editing ideas.</p>
+    </div>
+    <div class="card">
+      <h3>Priya</h3>
+      <p>Identity lock prompts are really useful.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>FAQ</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>How will I get the PDF?</h3>
+      <p>After payment, send screenshot on Instagram. PDF will be shared manually.</p>
+    </div>
+    <div class="card">
+      <h3>Is this beginner friendly?</h3>
+      <p>Yes, prompts are simple and ready to copy-paste.</p>
+    </div>
+    <div class="card">
+      <h3>Is payment refundable?</h3>
+      <p>Digital products are usually non-refundable after delivery.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <a class="btn" href="https://www.instagram.com/the_ethereal._art/" target="_blank">
+  Open Instagram
+</a>
+</section>
+
+<footer>
+  © 2026 PromptPack. All rights reserved.
+</footer>
+
+<script>
+const compareBox = document.getElementById("compareBox");
+const afterWrap = document.getElementById("afterWrap");
+const handle = document.getElementById("handle");
+
+function moveSlider(x){
+  const rect = compareBox.getBoundingClientRect();
+  let position = x - rect.left;
+
+  if(position < 0) position = 0;
+  if(position > rect.width) position = rect.width;
+
+  const percent = (position / rect.width) * 100;
+
+  afterWrap.style.width = percent + "%";
+  handle.style.left = percent + "%";
+}
+
+compareBox.addEventListener("mousemove", function(e){
+  moveSlider(e.clientX);
+});
+
+compareBox.addEventListener("touchmove", function(e){
+  moveSlider(e.touches[0].clientX);
+});
+</script>
+
+</body>
+</html>

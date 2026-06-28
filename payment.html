@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#152d69;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+color:white;
+}
+
+.box{
+background:#fafafa;
+padding:35px;
+border-radius:20px;
+text-align:center;
+max-width:420px;
+width:90%;
+box-shadow:0 0 30px rgba(0,0,0,.4);
+}
+
+h1{
+margin-bottom:15px;
+}
+
+.price{
+font-size:35px;
+color:#22c55e;
+margin:20px 0;
+}
+
+.qr{
+width:220px;
+border-radius:15px;
+margin:20px 0;
+}
+
+.upi{
+background:#1cac7c;
+padding:12px;
+border-radius:10px;
+margin:15px 0;
+font-size:18px;
+}
+
+.btn{
+display:block;
+text-decoration:none;
+background:#2563eb;
+color:white;
+padding:15px;
+border-radius:12px;
+margin-top:15px;
+font-size:18px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#2e127c;
+transform:scale(1.03);
+}
+
+.small{
+margin-top:20px;
+color:#021938;
+font-size:14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>Complete Your Payment</h1>
+
+<p>AI Prompt Pack</p>
+
+<div class="price">
+Rs.99
+</div>
+
+<img src="images/qr.jpeg" class="qr">
+
+<div class="upi">
+9888714139@fam
+</div>
+
+<a class="btn"
+href="upi://pay?pa=9888714139@fam&pn=PromptPack&am=99&cu=INR">
+Pay with UPI
+</a>
+
+<a class="btn"
+href="https://www.instagram.com/the_ethereal._art/"
+target="_blank">
+I Have Paid
+</a>
+
+<p class="small">
+After payment click "I Have Paid" and send your payment screenshot on Instagram.
+</p>
+
+</div>
+
+</body>
+</html>
